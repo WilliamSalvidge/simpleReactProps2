@@ -54,72 +54,62 @@ function Form(props) {
       <div className="checkbox">
         <div className="checkbox-grid">
           <div className="inline-grid">
-            <FormGroup>
-              <FormControlLabel
-                control={
-                  <Checkbox
-                    name="buttonA"
-                    checked={
-                      props.checked.buttonA
-                    }
-                    onChange={handleChange}
-                    inputProps={{
-                      "aria-label":
-                        "primary checkbox"
-                    }}
-                  />
-                }
-                label="Button A"
-              />
-              <FormControlLabel
-                control={
-                  <Checkbox
-                    name="buttonB"
-                    checked={
-                      props.checked.buttonB
-                    }
-                    onChange={handleChange}
-                    inputProps={{
-                      "aria-label":
-                        "primary checkbox"
-                    }}
-                  />
-                }
-                label="Button B"
-              />
-              <FormControlLabel
-                control={
-                  <Checkbox
-                    name="buttonC"
-                    checked={
-                      props.checked.buttonC
-                    }
-                    onChange={handleChange}
-                    inputProps={{
-                      "aria-label":
-                        "primary checkbox"
-                    }}
-                  />
-                }
-                label="Button C"
-              />
-              <FormControlLabel
-                control={
-                  <Checkbox
-                    name="buttonD"
-                    checked={
-                      props.checked.buttonD
-                    }
-                    onChange={handleChange}
-                    inputProps={{
-                      "aria-label":
-                        "primary checkbox"
-                    }}
-                  />
-                }
-                label="Button D"
-              />
-            </FormGroup>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  name="buttonA"
+                  checked={props.checked.buttonA}
+                  onChange={handleChange}
+                  inputProps={{
+                    "aria-label":
+                      "primary checkbox"
+                  }}
+                />
+              }
+              label="Button A"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  name="buttonB"
+                  checked={props.checked.buttonB}
+                  onChange={handleChange}
+                  inputProps={{
+                    "aria-label":
+                      "primary checkbox"
+                  }}
+                />
+              }
+              label="Button B"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  name="buttonC"
+                  checked={props.checked.buttonC}
+                  onChange={handleChange}
+                  inputProps={{
+                    "aria-label":
+                      "primary checkbox"
+                  }}
+                />
+              }
+              label="Button C"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  name="buttonD"
+                  checked={props.checked.buttonD}
+                  onChange={handleChange}
+                  inputProps={{
+                    "aria-label":
+                      "primary checkbox"
+                  }}
+                />
+              }
+              label="Button D"
+            />
           </div>
         </div>
         <div className="submit-button">
