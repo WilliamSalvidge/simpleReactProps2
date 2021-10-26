@@ -4,9 +4,7 @@ import React, {
   useContext
 } from "react";
 import { Link } from "react-router-dom";
-import {
-  Button
-} from "@material-ui/core";
+import { Button } from "@material-ui/core";
 
 function Form(props) {
   const handleChange = event => {
@@ -18,7 +16,7 @@ function Form(props) {
 
   return (
     <>
-      <div>
+      {/* <div>
         <input
           type="checkbox"
           name="buttonA"
@@ -47,17 +45,89 @@ function Form(props) {
           onChange={handleChange}
         />
         <label for="buttonD">Button D</label>
-      </div>
+      </div> */}
       <div className="checkbox">
-        <Link to="/results">
-          <Button
-            type="submit"
-            variant="contained"
-            color="secondary"
-          >
-            Submit
-          </Button>
-        </Link>
+        <div className="checkbox-grid">
+          <div className="inline-grid">
+            <FormGroup>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    name="buttonA"
+                    checked={
+                      props.checked.buttonA
+                    }
+                    onChange={handleChange}
+                    inputProps={{
+                      "aria-label":
+                        "primary checkbox"
+                    }}
+                  />
+                }
+                label="Button A"
+              />
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    name="buttonB"
+                    checked={
+                      props.checked.buttonB
+                    }
+                    onChange={handleChange}
+                    inputProps={{
+                      "aria-label":
+                        "primary checkbox"
+                    }}
+                  />
+                }
+                label="Button B"
+              />
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    name="buttonC"
+                    checked={
+                      props.checked.buttonC
+                    }
+                    onChange={handleChange}
+                    inputProps={{
+                      "aria-label":
+                        "primary checkbox"
+                    }}
+                  />
+                }
+                label="Button C"
+              />
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    name="buttonD"
+                    checked={
+                      props.checked.buttonD
+                    }
+                    onChange={handleChange}
+                    inputProps={{
+                      "aria-label":
+                        "primary checkbox"
+                    }}
+                  />
+                }
+                label="Button D"
+              />
+            </FormGroup>
+          </div>
+        </div>
+        <div className="submit-button">
+          <Link to="/results">
+            <Button
+              type="submit"
+              variant="contained"
+              color="secondary"
+            >
+              Submit
+            </Button>
+          </Link>
+        </div>
       </div>
     </>
   );
