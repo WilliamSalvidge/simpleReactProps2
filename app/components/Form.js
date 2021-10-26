@@ -4,7 +4,12 @@ import React, {
   useContext
 } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "@material-ui/core";
+import {
+  Button,
+  FormGroup,
+  FormControlLabel,
+  Checkbox
+} from "@material-ui/core";
 
 function Form(props) {
   const handleChange = event => {
