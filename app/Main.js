@@ -24,7 +24,7 @@ function App() {
       <div>
         <main>
           <div className="display-flex-ai-jc heading-banner">
-            <h1>State With Props Example</h1>
+            <h1>State with Props Example!</h1>
           </div>
           <Switch>
             <Route exact path="/">
